@@ -112,38 +112,50 @@
           </div>
         </div>
 
-        <div class="row" id="lot-display">
-          <div class="col-sm-6">
-            <h3>Lot #1</h3>
-            <p><strong>Address: </strong></p>
-            <p><strong>PIN: </strong></p>
-            <p>How do you plan on using this lot? (optional)</p>
-            <select class="form-control" id="use1">
-              <option>Side lot or yard</option>
-              <option>Garage</option>
-              <option>Home Expansion</option>
-              <option>Community Garden</option>
-              <option>Other</option>
-            </select>
+        <br>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading">Your Selected Lots</div>
+          <div class="panel-body">
+            <div class="row" id="lot-display">
+              <div class="col-sm-6">
+                <h3>Lot #1</h3>
+                <p><strong>Address: </strong></p>
+                <p><strong>PIN: </strong></p>
+                <form role="form">
+                <p>How do you plan on using this lot? (optional)</p>
+                <select class="form-control">
+                  <option></option>
+                  <option>Side lot or yard</option>
+                  <option>Garage</option>
+                  <option>Home Expansion</option>
+                  <option>Community Garden</option>
+                  <option>Other</option>
+                </select>
+              </form>
+              </div>
+
+
+              <div class="col-sm-6">
+                <h3>Lot #2</h3>
+                <p><strong>Address: </strong></p>
+                <p><strong>PIN: </strong></p>
+                <p>How do you plan on using this lot? (optional)</p>
+                <select class="form-control" id="use2">
+                  <option></option>
+                  <option>Side lot or yard</option>
+                  <option>Garage</option>
+                  <option>Home Expansion</option>
+                  <option>Community Garden</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+            </div>
           </div>
-
-
-          <div class="col-sm-6">
-            <h3>Lot #2</h3>
-            <p><strong>Address: </strong></p>
-            <p><strong>PIN: </strong></p>
-            <p>How do you plan on using this lot? (optional)</p>
-            <select class="form-control" id="use2">
-              <option></option>
-              <option>Side lot or yard</option>
-              <option>Garage</option>
-              <option>Home Expansion</option>
-              <option>Community Garden</option>
-              <option>Other</option>
-            </select>
-          </div>
-
         </div>
+
 
 
 
@@ -160,7 +172,7 @@
 
               <li>You cannot be a church (churches are not eligible for the Large Lots program)</li>
 
-              <li>blah</li>
+              <li></li>
             </ul>
 
           </div>
@@ -178,7 +190,7 @@
 
               <li>You can't use the lot for business (reword)</li>
 
-              <li>blah</li>
+              <li></li>
             </ul>
             <br>
           </div>
@@ -189,7 +201,7 @@
         <div id="application" class="well">
           <h1>APPLY!</h1>
           <div class="app-section" id="app-intro">
-            <p>blah blah some text here</p>
+            <p>[some explanatory text here]</p>
             
             <br>
           </div>
@@ -204,7 +216,7 @@
 
                 <div class="accordion-group">  
                   <div class="accordion-heading accordion-toggle" data-toggle="collapse" data-parent="#deed-help" href="#collapseOne">  
-                    How can I get my deed?
+                    <strong>How can I get my deed?</strong>
                   </div>  
                   <div id="collapseOne" class="accordion-body collapse">  
                     <div class="accordion-inner">
@@ -212,17 +224,16 @@
                       <p>The Cook County Recorder of Deeds holds records of property ownership. If your deed was dated before 1985, you will need to pick up your deed <a href="https://www.google.com/maps/place/Cook+County+Recorder+of+Deeds/@41.883823,-87.63144,17z">in person</a>. If your deed is from after 1985, you can download a scanned version of your property deed by following these steps:
                       <h3>1. Search records under your PIN</h3>
                         
-                      <p>
+                      <p class="deed-explain">
                         Enter your current PIN <a href="http://12.218.239.81/i2/default.aspx" target="blank">here</a> and click Search. You will see a list of various records associated with your PIN.
                         <img src="images/deed1.png"/>
                       </p>
                       <h3>2. View your deed</h3>
-                      <p>
-                      Click on the most recent deed - this will likely be in the first row. Document details will show up on the right side of the page, and a scanned image of your deed will show up in a new window. If you do not see the scanned image, click View Images (make sure pop-ups are allowed).[screenshot?]</p>
+                      <p class="deed-explain">
+                      Click on the most recent deed - this will likely be in the first row. Document details will show up on the right side of the page, and a scanned image of your deed will show up in a new window. If you do not see the scanned image, click View Images (make sure pop-ups are allowed). [screenshot]</p>
                       <h3>3. Download your deed as a PDF (this costs $4.00)</h3>
-                      <p>
-                      <img src="images/deed3.png"/>
-                      Within the pop-up, click Print Document and enter your payment information. Once you are done, you will have the scanned document as a PDF on your computer.</p>
+                      <p class="deed-explain">
+                      Within the pop-up, click Print Document and enter your payment information. Once you are done, you will have the scanned document as a PDF on your computer. [screenshot]</p>
                     </div>  
                   </div>  
                 </div>
@@ -279,7 +290,7 @@
             <div>
               <form role="form">
                 <div class="form-group">
-                  <label for="input-firstname"><i class="glyphicon glyphicon-user"></i> Name*</label>
+                  <label for="input-firstname"><i class="glyphicon glyphicon-user"></i> Name<span class="red">*</span></label>
                   <div class="row">
                     <div class="col-xs-6">
                       <input type="text" class="form-control" id="input-firstname" placeholder="First Name">
@@ -290,7 +301,7 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="input-phone"><i class="glyphicon glyphicon-earphone"></i> Phone*</label>
+                  <label for="input-phone"><i class="glyphicon glyphicon-earphone"></i> Phone<span class="red">*</span></label>
                   <input type="tel" class="form-control" id="input-phone" placeholder="###-###-####">
                 </div>
                 <div class="form-group">
@@ -298,7 +309,7 @@
                   <input type="email" class="form-control" id="input-email" placeholder="name@email.com">
                 </div>
                 <div class="form-group">
-                  <label for="input-street"><i class="glyphicon glyphicon-home"></i> Address*</label>
+                  <label for="input-street"><i class="glyphicon glyphicon-home"></i> Address<span class="red">*</span></label>
                   <div class="row">
                     <div class="col-sm-6">
                       <input type="text" class="form-control" id="input-street" placeholder="Street">
@@ -318,7 +329,7 @@
                   <label for="input-q1">How did you hear about the Large Lots program?</label>
                   <input type="text" class="form-control" id="input-q1" placeholder="">
                 </div>
-                <p>*Required</p>
+                <p><span class="red">*</span>Required</p>
 
 
                 <br>
@@ -333,8 +344,9 @@
             <hr>
             <h2>4. ACCEPT TERMS</h2>
             <div>
-              <p>This application is a Statement of Interest only, and does not guarantee that the City of Chicago will transfer ownership of the lots indicated. If this application has been approved, the City will work with the buyer to close the transaction - the property will be transferred "AS IS" via a Quit Claim Deed. The City maintains the right to condition the transfer of the title on the buyer’s acceptance of certain deed restrictions. Restrictions may be included in the deed to ensure properties are maintained in an agreed upon way. If the buyer fails to maintain the property in an agreed upon way, the City may exercise its discretion and take title to the property back from the buyer</p>
-              <p>By checking the box below, I certify that the information provided is correct and true to the best of my knowledge. I agree to maintain the lot requested in accordance with all local ordinances and relevant laws. Falsifying or deliberately omitting any information regarding this application will result in immediate termination from the program and/or the City of Chicago seeking remedies available under law.</p>
+              <p>This application is a Statement of Interest only, and does not guarantee that the City of Chicago will transfer ownership of the lots indicated. If this application gets approved, the City will work with the buyer to close the transaction - the property will be transferred "AS IS" via a Quit Claim Deed. The City maintains the right to condition the transfer of the title on the buyer’s acceptance of certain deed restrictions. Restrictions may be included in the deed to ensure properties are maintained in an agreed upon way. If the buyer fails to maintain the property in an agreed upon way, the City may exercise its discretion and take title to the property back from the buyer.</p>
+              <p>[insert more terms/conditions]</p>
+              <p>By checking the box below, I certify that the information provided is correct and true to the best of my knowledge. Falsifying or deliberately omitting any information regarding this application will result in immediate termination from the program and/or the City of Chicago seeking remedies available under law.</p>
                 
               <div class="checkbox">
                 <label>

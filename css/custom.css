@@ -94,3 +94,20 @@ h1, h2, h3, #deed-online, #deed-in-person { padding-top: 70px; margin-top: -70px
     max-width: 100%;
     min-width: 100%;
 }
+
+.deed-explain{
+    margin-left: 1em;
+}
+
+
+/* Form Styling */
+
+.red{
+    color: red;
+}
+
+#terms p{
+    font-size: .8em;
+}
+
+
