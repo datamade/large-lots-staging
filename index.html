@@ -169,11 +169,9 @@
                     <input type="text" class="form-control" id="input-PIN" placeholder="##-##-###-###-####">
                   </div>
                   <div class="form-group">
-                    <span class="btn btn-default btn-file btn-primary">
-                      <label for="input-deed">Upload your deed ...</label>
-                      <input type="file" id="input-deed">
-                    </span>
-                    <span class="red">*</span>
+                    <label for="input-deed"><i class='fa fa-cloud-upload'></i> Upload your deed</label><span class="red">*</span>
+                    <input type="file" id="input-deed">
+                    <p class="help-block">You will need an electronic copy of your deed on your computer.</p>
                   </div>
 
                   <div class="panel-group" id="accordion">
@@ -181,23 +179,26 @@
                       <div class="panel-heading">
                         <h4 class="panel-title">
                           <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            <i class='fa fa-info-circle'></i> How can I get my deed?
+                            <i class='fa fa-info-circle'></i> How can I get an electronic copy my deed?
                           </a>
                         </h4>
                       </div>
                       <div id="collapseOne" class="panel-collapse collapse">
                         <div class="panel-body">
                           <p>The Cook County Recorder of Deeds holds records of property ownership. If your deed was dated before 1985, you will need to pick up your deed <a href="https://www.google.com/maps/place/Cook+County+Recorder+of+Deeds/@41.883823,-87.63144,17z">in person</a>. If your deed is from after 1985, you can download a scanned version of your property deed by following these steps:
-                          <h3>1. Search records under your PIN</h3>
+                          
+                          <p><strong>1. Search records under your PIN</strong></p>
                             
                           <p class="deed-explain">
                             Enter your current PIN <a href="http://12.218.239.81/i2/default.aspx" target="blank">here</a> and click Search. You will see a list of various records associated with your PIN.
                             <img class='img-responsive' src="images/deed1.png"/>
                           </p>
-                          <h3>2. View your deed</h3>
+
+                          <p><strong>2. View your deed</strong></p>
                           <p class="deed-explain">
                           Click on the most recent deed - this will likely be in the first row. Document details will show up on the right side of the page, and a scanned image of your deed will show up in a new window. If you do not see the scanned image, click View Images (make sure pop-ups are allowed). [screenshot]</p>
-                          <h3>3. Download your deed as a PDF (this costs $4.00)</h3>
+                          
+                          <p><strong>3. Download your deed as a PDF (this costs $4.00)</strong></p>
                           <p class="deed-explain">
                           Within the pop-up, click Print Document and enter your payment information. Once you are done, you will have the scanned document as a PDF on your computer. [screenshot]</p>
                         </div>
@@ -233,6 +234,7 @@
                   <div class="form-group">
                     <label for="input-email"><i class="fa fa-envelope"></i> Email</label>
                     <input type="email" class="form-control" id="input-email" placeholder="name@email.com">
+                    <p class="help-block">If provided, we'll send you a confirmation email and updates on your application status.</p>
                   </div>
                   <div class="form-group">
                     <label for="input-street"><i class="fa fa-home"></i> Address<span class="red">*</span></label>
@@ -263,7 +265,7 @@
           <div class='row'>
             <div class='col-md-8'>
               <div id="terms">
-                <h2>4. Terms and conditions</h2>
+                <h2>4. Eligibility and Terms</h2>
 
                 <h3>Program Eligibility</h3>
 
@@ -280,25 +282,24 @@
                   <li>You can't use the lot for business (reword)</li>
                 </ul>
 
-                <div>
-                  <p>This application is a Statement of Interest only, and does not guarantee that the City of Chicago will transfer ownership of the lots indicated. If this application gets approved, the City will work with the buyer to close the transaction - the property will be transferred "AS IS" via a Quit Claim Deed. The City maintains the right to condition the transfer of the title on the buyer’s acceptance of certain deed restrictions. Restrictions may be included in the deed to ensure properties are maintained in an agreed upon way. If the buyer fails to maintain the property in an agreed upon way, the City may exercise its discretion and take title to the property back from the buyer.</p>
+                <h3>Terms</h3>
 
-                  <p>By checking the box below, I certify that the information provided is correct and true to the best of my knowledge. Falsifying or deliberately omitting any information regarding this application will result in immediate termination from the program and/or the City of Chicago seeking remedies available under law.</p>
+                <p>This application is a Statement of Interest only, and does not guarantee that the City of Chicago will transfer ownership of the lots indicated. If this application gets approved, the City will work with the buyer to close the transaction - the property will be transferred "AS IS" via a Quit Claim Deed. The City maintains the right to condition the transfer of the title on the buyer’s acceptance of certain deed restrictions. Restrictions may be included in the deed to ensure properties are maintained in an agreed upon way. If the buyer fails to maintain the property in an agreed upon way, the City may exercise its discretion and take title to the property back from the buyer.</p>
+
+                <p>By checking the box below, I certify that the information provided is correct and true to the best of my knowledge. Falsifying or deliberately omitting any information regarding this application will result in immediate termination from the program and/or the City of Chicago seeking remedies available under law.</p>
                   
-                  <div class='well'>
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox"> I understand and agree to the terms
-                      </label>
-                    </div>
+                <div class='well'>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> I understand and agree to the terms<span class="red">*</span>
+                    </label>
                   </div>
-
                 </div>
               </div>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-success btn-lg">Submit application</button>
+          <button type="submit" class="btn btn-primary btn-lg">Submit application &raquo;</button>
 
         </div>
 

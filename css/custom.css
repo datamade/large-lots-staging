@@ -23,11 +23,14 @@ color: #238b45;
 
 #lot-form input[type=checkbox] { margin-left: 20px; }
 
+.btn {
+    text-transform: none;
+    font-size: 15px;
+}
+
 .btn-primary {
     background-color: #333;
     border-color: #333;
-    text-transform: none;
-    font-size: 15px;
 }
 
 .btn-primary:hover {
@@ -79,26 +82,6 @@ color: #238b45;
 .label-applied { background-color: #A1285D; }
 .label-danger { background-color: #BE4630; }
 .label-success { background-color: #389250; }
-
-
-/* deed help style */
-#deed-help{
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: .6em;
-    border-radius: 6px;
-    background-color: #D6F0C9;
-}
-
-#deed-help img{
-    max-width: 100%;
-    min-width: 100%;
-}
-
-.deed-explain{
-    margin-left: 1em;
-}
-
 
 /* Form Styling */
 
