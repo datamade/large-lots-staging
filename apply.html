@@ -144,10 +144,10 @@
           <div class='row'>
             <div class='col-md-8'>
               <div class="well" id="ownership">
-                <h2>2. Upload proof of ownership on the block</h2>
+                <h2>2. Proof of ownership on the block</h2>
                 <p><span class="red">*</span>Required</p>
                 <div>
-                  <p>You'll need to prove that you own property on the same block as the lot(s) you are applying to get. To prove ownership, you'll have to provide a deed.</p>
+                  <p>You'll need to prove that you own property on the same block as the lot(s) you are applying to get.</p>
 
                   <div class="form-group">
                     <label for="input-street"><i class="fa fa-home"></i> Address<span class="red">*</span></label>
@@ -171,44 +171,55 @@
                     <label for="input-PIN">Your Property Identification Number (PIN)<span class="red">*</span></label>
                     <input type="text" class="form-control" id="input-PIN" placeholder="##-##-###-###-####">
                   </div>
-                  <div class="form-group">
-                    <label for="input-deed"><i class='fa fa-cloud-upload'></i> Upload your deed</label><span class="red">*</span>
-                    <input type="file" id="input-deed">
-                    <p class="help-block">You will need an electronic copy of your deed on your computer.</p>
-                  </div>
 
-                  <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            <i class='fa fa-info-circle'></i> How can I get an electronic copy my deed?
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>The Cook County Recorder of Deeds holds records of property ownership. If your deed was dated before 1985, you will need to pick up your deed <a href="https://www.google.com/maps/place/Cook+County+Recorder+of+Deeds/@41.883823,-87.63144,17z">in person</a>. If your deed is from after 1985, you can download a scanned version of your property deed by following these steps:
-                          
-                          <p><strong>1. Search records under your PIN</strong></p>
+                  <h3>Upload your deed</h3>
+
+                  <p>To prove ownership, you'll have to upload a copy of your deed.</p>
+
+                  <ol>
+                    <li>If you <strong>do</strong> have a paper copy handy, scan it or take a picture.</li>
+                    <li>If you <strong>don't</strong> have a copy, download it from the <a href="http://12.218.239.81/i2/default.aspx" target="blank">Cook County Recorder of Deeds</a></li>
+                  </ol>
+
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                              <i class='fa fa-info-circle'></i> How do I download my deed from the Cook County Recorder of Deeds?
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <p>The <a href="http://12.218.239.81/i2/default.aspx" target="blank">Cook County Recorder of Deeds</a> holds records of property ownership. If your deed was dated before 1985, you will need to pick up your deed <a href="https://www.google.com/maps/place/Cook+County+Recorder+of+Deeds/@41.883823,-87.63144,17z">in person</a>. If your deed is from after 1985, you can download a scanned version of your property deed by following these steps:
                             
-                          <p class="deed-explain">
-                            Enter your current PIN <a href="http://12.218.239.81/i2/default.aspx" target="blank">here</a> and click Search. You will see a list of various records associated with your PIN.
-                            <img class='img-responsive' src="images/deed1.png"/>
-                          </p>
+                            <p><strong>1. Search records under your PIN</strong></p>
+                              
+                            <p class="deed-explain">
+                              Enter your current PIN <a href="http://12.218.239.81/i2/default.aspx" target="blank">here</a> and click Search. You will see a list of various records associated with your PIN.
+                              <img class='img-responsive' src="images/deed1.png"/>
+                            </p>
 
-                          <p><strong>2. View your deed</strong></p>
-                          <p class="deed-explain">
-                          Click on the most recent deed - this will likely be in the first row. Document details will show up on the right side of the page, and a scanned image of your deed will show up in a new window. If you do not see the scanned image, click View Images (make sure pop-ups are allowed). [screenshot]</p>
-                          
-                          <p><strong>3. Download your deed as a PDF (this costs $4.00)</strong></p>
-                          <p class="deed-explain">
-                          Within the pop-up, click Print Document and enter your payment information. Once you are done, you will have the scanned document as a PDF on your computer. [screenshot]</p>
+                            <p><strong>2. View your deed</strong></p>
+                            <p class="deed-explain">
+                            Click on the most recent deed - this will likely be in the first row. Document details will show up on the right side of the page, and a scanned image of your deed will show up in a new window. If you do not see the scanned image, click View Images (make sure pop-ups are allowed). [screenshot]</p>
+                            
+                            <p><strong>3. Download your deed as a PDF (this costs $4.00)</strong></p>
+                            <p class="deed-explain">
+                            Within the pop-up, click Print Document and enter your payment information. Once you are done, you will have the scanned document as a PDF on your computer. [screenshot]</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+
+                  <div class="form-group">
+                    <label for="input-deed"><i class='fa fa-cloud-upload'></i> Upload your deed</label><span class="red">*</span>
+                    <input type="file" id="input-deed">
+                    <p class="help-block">Your deed will need to be in PDF or image format.</p>
+                  </div>
+
               </div>
             </div>
           </div>
