@@ -6,7 +6,7 @@ body {
 }
 
 a, a:hover {
-color: #238b45;
+    color: #238b45;
 }
 
 .navbar-header>.navbar-brand, .navbar-inverse .navbar-nav>li>a {color: #238b45; margin-top: 7px;}
@@ -17,6 +17,10 @@ color: #238b45;
 
 /* h1, h2, h3, #deed-online, #deed-in-person { padding-top: 70px; margin-top: -70px; } */
 
+#main-content {
+    padding-top: 40px;
+}
+
 #search_address {
     width: 400px;
 }
@@ -26,6 +30,7 @@ color: #238b45;
 .btn {
     text-transform: none;
     font-size: 15px;
+    font-weight: normal;
 }
 
 .btn-primary {
@@ -36,6 +41,26 @@ color: #238b45;
 .btn-primary:hover {
     background-color: #555;
     border-color: #555;
+}
+
+.btn-danger {
+    background-color: #A1285D;
+    border-color: #A1285D;
+}
+
+.btn-danger:hover {
+    background-color: #ca3275;
+    border-color: #ca3275;
+}
+
+.btn-success {
+    background-color: #389250;
+    border-color: #389250;
+}
+
+.btn-success:hover {
+    background-color: #46b764;
+    border-color: #46b764;
 }
 
 #print-page:hover { background-color: #eee; }
